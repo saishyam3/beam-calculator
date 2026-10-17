@@ -6,12 +6,12 @@
 export type Support = 'cantilever' | 'simply-supported'
 
 export type Load =
-    | { kind: 'point'; P: number; a: number} // force P at distance a from the left end
-    | { kind: 'udl'; q: number } // uniform load over the whole span
+  | { kind: 'point'; P: number; a: number } // force P at distance a from the left end
+  | { kind: 'udl'; q: number } // uniform load over the whole span
 
 export interface Beam {
-    support: Support
-    L: number // span
-    E: number // Young's modulus
-    I: number // second moment of area
+  support: Support
+  L: number // span
+  E: number // Young's modulus
+  I: number // second moment of area
 }
